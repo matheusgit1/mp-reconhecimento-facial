@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 // import LoadingSpinner from "./components/LoadingSpinner";
 import * as faceapi from "face-api.js";
-import LoadingSpinner from "./components/LoadingSpinner";
+// import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
 
-  const [expression, setExpression] = React.useState<{
+  const [_expression, setExpression] = React.useState<{
     expression: string;
     probability: number;
   }>();
